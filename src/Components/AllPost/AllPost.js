@@ -9,7 +9,7 @@ const AllPost = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/posts')
+        fetch('https://polar-gorge-40384.herokuapp.com/posts')
             .then(res => res.json())
             .then(data => setPosts(data))
     }, [])

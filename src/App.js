@@ -5,6 +5,7 @@ import AdminPanel from './Components/AdminPanel/AdminPanel';
 import Login from './Components/Login/Login';
 import PostABlog from './Components/PostABlog/PostABlog';
 import AddAdmin from './Components/AddAdmin/AddAdmin';
+import PostDetails from './Components/PostDetails/PostDetails';
 // import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import './App.css';
 import {
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home></Home>
+          </Route>
+          <Route path="/post/:postId">
+            <PostDetails></PostDetails>
           </Route>
           <Route path="/admin">
             <AdminPanel></AdminPanel>

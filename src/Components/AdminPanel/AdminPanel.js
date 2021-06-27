@@ -17,7 +17,7 @@ const [loggedInUser,setLoggedInUser] = useContext(UserContext);
 const [isAdmin, setIsAdmin] = useState(false);
 console.log(loggedInUser.email)
 useEffect(() => {
-    fetch('http://localhost:5000/isAdmin', {
+    fetch('https://polar-gorge-40384.herokuapp.com/isAdmin', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({ email: loggedInUser.email })

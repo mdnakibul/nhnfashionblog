@@ -30,7 +30,7 @@ const PostABlog = () => {
         data.img = imageURL;
         data.date = new Date().toDateString();
         console.log(data);
-        fetch('http://localhost:5000/uploadPost',{
+        fetch('https://polar-gorge-40384.herokuapp.com/uploadPost',{
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json'
