@@ -1,0 +1,11 @@
+.carousel-item img{
+    max-height:400px;
+}
+.carousel-item{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.carousel-item h3{
+    max-width:860px;
+}
